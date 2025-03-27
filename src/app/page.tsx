@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { Editor } from '@/components/blocknote/dynamic-editor';
+import CollaborativeEditor from '@/components/tiptap/editor';
 
 import styles from './page.module.css';
 
@@ -9,7 +9,7 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <div className={".editor"}>
-          <Editor />
+          <CollaborativeEditor />
         </div>
       </main>
       <footer className={styles.footer}>
