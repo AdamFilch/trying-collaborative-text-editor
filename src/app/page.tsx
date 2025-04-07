@@ -1,6 +1,8 @@
 import Image from 'next/image';
 
-import CollaborativeEditor from '@/components/tiptap/editor';
+import { Editor } from '@/components/blocknote/dynamic-editor';
+import { ForwardRefEditor } from '@/components/mdxeditor/dynamic-editor';
+import { DynProseMirrorEditor } from '@/components/prosemirror/dynamic-editor';
 
 import styles from './page.module.css';
 
@@ -9,7 +11,7 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <div className={".editor"}>
-          <CollaborativeEditor />
+          <Editor />
         </div>
       </main>
       <footer className={styles.footer}>
